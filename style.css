@@ -1,0 +1,427 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #080808;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* NAVBAR */
+
+.navbar {
+  width: 100%;
+  padding: 22px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #202020;
+  position: sticky;
+  top: 0;
+  background: rgba(8, 8, 8, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+}
+
+.logo,
+.footer-logo {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar nav a {
+  color: #aaa;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.navbar nav a:hover {
+  color: white;
+}
+
+.nav-btn {
+  border: 1px solid #555;
+  padding: 9px 18px;
+  border-radius: 30px;
+  font-size: 13px;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 90vh;
+  padding: 100px 7%;
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  align-items: center;
+  gap: 70px;
+}
+
+.eyebrow {
+  color: #999;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: clamp(45px, 7vw, 88px);
+  line-height: 1;
+  max-width: 900px;
+  letter-spacing: -4px;
+}
+
+.hero h1 span,
+.section-heading span,
+.about-content span,
+.cta h2 span,
+.contact-section h2 span {
+  color: #888;
+}
+
+.hero-text {
+  max-width: 650px;
+  margin-top: 30px;
+  color: #aaa;
+  font-size: 18px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.primary-btn {
+  display: inline-block;
+  background: #f5f5f5;
+  color: #080808;
+  padding: 14px 25px;
+  border-radius: 30px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  transform: translateY(-3px);
+}
+
+.secondary-btn {
+  display: inline-block;
+  border: 1px solid #444;
+  padding: 14px 25px;
+  border-radius: 30px;
+  color: #ddd;
+}
+
+/* HERO CARD */
+
+.hero-card {
+  border: 1px solid #292929;
+  padding: 35px;
+  border-radius: 20px;
+  background: #0d0d0d;
+}
+
+.card-label {
+  font-size: 11px;
+  color: #777;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+.method {
+  display: flex;
+  gap: 20px;
+  padding: 17px 0;
+  border-bottom: 1px solid #222;
+}
+
+.method span {
+  color: #666;
+  font-size: 13px;
+}
+
+.method strong {
+  font-size: 15px;
+}
+
+/* SECTIONS */
+
+.section {
+  padding: 120px 7%;
+  border-top: 1px solid #181818;
+}
+
+.section-heading {
+  max-width: 800px;
+  margin-bottom: 60px;
+}
+
+.section-heading h2,
+.about-content h2,
+.contact-section h2 {
+  font-size: clamp(38px, 5vw, 65px);
+  line-height: 1.05;
+  letter-spacing: -2px;
+}
+
+/* SERVICES */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.service-card {
+  border: 1px solid #292929;
+  padding: 40px;
+  min-height: 240px;
+  border-radius: 16px;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  border-color: #555;
+}
+
+.service-number {
+  color: #666;
+  font-size: 13px;
+  margin-bottom: 45px;
+}
+
+.service-card h3 {
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  color: #999;
+  max-width: 450px;
+}
+
+/* PROCESS */
+
+.process-section {
+  background: #0b0b0b;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+
+.process-grid div {
+  padding: 25px;
+  border: 1px solid #252525;
+  border-radius: 14px;
+}
+
+.process-grid span {
+  color: #666;
+  font-size: 12px;
+}
+
+.process-grid h3 {
+  margin: 35px 0 10px;
+}
+
+.process-grid p {
+  color: #888;
+  font-size: 14px;
+}
+
+/* ABOUT */
+
+.about-content {
+  max-width: 900px;
+}
+
+.about-content p:not(.eyebrow) {
+  color: #999;
+  max-width: 700px;
+  margin-top: 30px;
+  font-size: 17px;
+}
+
+/* CTA */
+
+.cta {
+  padding: 130px 7%;
+  text-align: center;
+  border-top: 1px solid #181818;
+  border-bottom: 1px solid #181818;
+}
+
+.cta h2 {
+  font-size: clamp(45px, 7vw, 90px);
+  line-height: 1;
+  letter-spacing: -4px;
+}
+
+.cta > p:not(.eyebrow) {
+  color: #999;
+  max-width: 600px;
+  margin: 25px auto 35px;
+}
+
+/* CONTACT */
+
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.contact-section > div > p:not(.eyebrow) {
+  color: #999;
+  margin-top: 25px;
+  max-width: 600px;
+}
+
+.contact-card {
+  border: 1px solid #292929;
+  padding: 35px;
+  border-radius: 16px;
+}
+
+.contact-card p {
+  color: #666;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.contact-card a {
+  display: block;
+  margin: 8px 0 30px;
+  color: #ddd;
+  word-break: break-word;
+}
+
+.contact-label {
+  margin-top: 20px;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 45px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+footer p {
+  color: #666;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+footer small {
+  color: #555;
+}
+
+/* MOBILE */
+
+@media (max-width: 850px) {
+
+  .navbar nav,
+  .nav-btn {
+    display: none;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 70px;
+  }
+
+  .hero h1 {
+    letter-spacing: -2px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 80px 6%;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.primary-btn {
+  box-shadow: 0 0 0 rgba(255,255,255,0);
+}
+
+.primary-btn:hover {
+  box-shadow: 0 10px 35px rgba(255,255,255,0.12);
+}
+
+.service-card,
+.process-grid div,
+.hero-card,
+.contact-card {
+  transition: transform 0.35s ease, border-color 0.35s ease;
+}
+
+.service-card:hover,
+.process-grid div:hover {
+  transform: translateY(-6px);
+  border-color: #555;
+}
+
+::selection {
+  background: #ffffff;
+  color: #000000;
+}
