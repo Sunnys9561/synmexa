@@ -190,6 +190,18 @@ nav a:hover {
   isolation: isolate;
 }
 
+@media (min-width: 1000px) {
+  .hero-content {
+    width: 52%;
+    max-width: 650px;
+  }
+
+  .hero-visual {
+    width: 38%;
+    right: 36px;
+  }
+}
+
 .hero-glow {
   position: absolute;
   width: 620px;
