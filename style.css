@@ -1356,3 +1356,19 @@ footer {
   }
 
 }
+
+/* MOBILE FIX: Keep service links below descriptions */
+@media (max-width: 768px) {
+  .service-card {
+    min-height: 0;
+    padding: 28px 24px 24px;
+  }
+
+  .card-link {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    display: inline-block;
+    margin-top: 18px;
+  }
+}
