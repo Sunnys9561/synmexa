@@ -1372,3 +1372,27 @@ footer {
     margin-top: 18px;
   }
 }
+
+/* FINAL MOBILE SERVICE CARD LAYOUT */
+@media (max-width: 768px) {
+  .service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 0;
+    padding: 24px;
+  }
+
+  .service-card p {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .service-card .card-link {
+    position: static;
+    margin-top: 20px;
+    display: inline-block;
+    line-height: 1.5;
+    z-index: 2;
+  }
+}
